@@ -1,0 +1,21 @@
+input{
+  border-bottom-style:1px solid #000 ;
+  background-color: #fff;
+  border:1px solid #000;
+}
+.container {
+  background-color: #4cadd2d9;
+   padding: 20px;
+}
+.container-fluid{
+  border:1px solid #000;
+  margin:10px 0;
+}
+form{
+  background-color: #4cadd2d9;
+
+}
+.panel{
+  background-color: #4cadd2d9;
+}
+

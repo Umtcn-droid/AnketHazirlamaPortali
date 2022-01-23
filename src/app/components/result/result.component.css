@@ -1,0 +1,18 @@
+.main{
+  margin: 20px 0;
+}
+form{
+  border:1px solid #000;
+}
+.container{
+  min-height: 600px;
+  border: 1px solid #000;
+  padding: 20px 20px;
+
+}
+.container2{
+
+  border: 1px solid #000;
+
+
+}

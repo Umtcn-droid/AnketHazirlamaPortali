@@ -1,0 +1,27 @@
+
+
+  <mat-toolbar color="primary">
+    <span>{{Baslik}}</span>
+  </mat-toolbar>
+
+
+<form [formGroup]="form">
+
+  <mat-form-field>
+    <mat-label>Adı</mat-label>
+    <input matInput pleaceholder="Adı" formControlName="UyeAdi">
+  </mat-form-field >
+  <mat-form-field>
+    <mat-label>Tel</mat-label>
+    <input matInput pleaceholder="Telefon" formControlName="UyeTel">
+  </mat-form-field >
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input matInput pleaceholder="Email" formControlName="UyeEmail">
+  </mat-form-field >
+
+
+
+  <button mat-raised-button color="primary" (click)="this.dialogRef.close(form.value)">Kaydet</button>
+  <button mat-raised-button color="warn"  (click)="this.dialogRef.close()">İptal</button>
+</form>

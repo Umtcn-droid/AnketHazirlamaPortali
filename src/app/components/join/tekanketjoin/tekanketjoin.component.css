@@ -1,0 +1,18 @@
+.main {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+form{
+  border: 1px solid #000;
+
+}
+.error {
+  color: red;
+  font-size: 12px;
+}
+.container{
+  border: 1px solid #000;
+  min-height: 600px;
+}

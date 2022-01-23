@@ -1,0 +1,11 @@
+
+td{
+  font-size: 15px;
+  font-weight: 700;
+}
+.container{
+  background-color: #4cadd2d9;
+  padding: 50px;
+  height: 600px;
+  border: 1px solid #000;
+}

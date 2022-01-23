@@ -1,0 +1,187 @@
+
+
+
+
+     <!-- queston 1  start-->
+    <div class="soru"  *ngFor="let share of shares | async">
+      <div class="card-body text-center">{{ share.q1 }}</div>
+      <div class="row">
+          <div class="col-6">
+              <button mat-raised-button (click)="onAnswerInput(share.q1ch1)" class="btn btn-primary btn-block" role="alert">A. {{ share.q1ch1 }}</button>
+          </div>
+          <div class="col-6">
+              <button mat-raised-button (click)="onAnswerInput(share.q1ch2)" class="btn btn-primary btn-block" role="alert">B. {{ share.q1ch2 }}</button>
+          </div>
+      </div>
+      <br/>
+      <div class="row">
+          <div class="col-6">
+              <button mat-raised-button (click)="onAnswerInput(share.q1ch3)" class="btn btn-primary btn-block" role="alert">C. {{ share.q1ch3 }}</button>
+          </div>
+          <div class="col-6">
+              <button mat-raised-button (click)="onAnswerInput(share.q1ch4)" class="btn btn-primary btn-block" role="alert">D. {{ share.q1ch4 }}</button>
+          </div>
+
+
+      </div>
+      <br/>
+
+
+      <div  class="form-action"><!--*ngFor="let answerOption of answerOptions"-->
+          <button mat-raised-button *ngIf="share.q1correctOption === answer"  class="btn btn-light btn-block">
+            Haklısın {{ share.q1correctOption }} Doğru Cevap :)
+          </button>
+      </div>
+      <div class="form-action">
+        <button mat-raised-button *ngIf="share.q1correctOption!=answer && answer!==''  " color="warn"  class="btn-danger btn-block">
+          Cevabınız yanlış...
+        </button>
+    </div>
+
+    </div>
+     <!-- question 1 end-->
+
+
+  <!--queston  2 start-->
+<div class="soru"  *ngFor="let share of shares | async">
+  <div class="card-body text-center">{{ share.q2 }}</div>
+  <div class="row">
+      <div class="col-6">
+          <button mat-raised-button  (click)="onAnswerInput(share.q2ch1)" class="btn btn-primary btn-block" role="alert">A. {{ share.q2ch1 }}</button>
+      </div>
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q2ch2)" class="btn btn-primary btn-block" role="alert">B. {{ share.q2ch2 }}</button>
+      </div>
+  </div>
+  <br />
+  <div class="row">
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q2ch3)" class="btn btn-primary btn-block" role="alert">C. {{ share.q2ch3 }}</button>
+      </div>
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q2ch4)" class="btn btn-primary btn-block" role="alert">D. {{ share.q2ch4 }}</button>
+      </div>
+  </div>
+
+  <div  class="form-action" ><!--*ngFor="let answerOption of answerOptions"-->
+      <button mat-raised-button *ngIf="share.q2correctOption === answer" class="btn btn-light btn-block">
+                Haklısın {{ share.q2correctOption }} Doğru Cevap :)
+              </button>
+  </div>
+  <div class="form-action">
+    <button mat-raised-button *ngIf="share.q2correctOption!=answer && answer!==''  " color="warn" class="btn-danger btn-block">
+      Cevabınız yanlış...
+    </button>
+</div>
+
+</div>
+
+
+  <!--queston 3  start-->
+  <div class="soru"  *ngFor="let share of shares | async">
+    <div class="card-body text-center">
+      {{ share.q3 }}
+
+    </div>
+  <div class="row">
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q3ch1)" class="btn btn-primary btn-block" role="alert">A. {{ share.q3ch1 }}</button>
+      </div>
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q3ch2)" class="btn btn-primary btn-block" role="alert">B. {{ share.q3ch2 }}</button>
+      </div>
+  </div>
+  <br />
+  <div class="row">
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q3ch3)" class="btn btn-primary btn-block" role="alert">C. {{ share.q3ch3 }}</button>
+      </div>
+      <div class="col-6">
+          <button mat-raised-button (click)="onAnswerInput(share.q3ch4)" class="btn btn-primary btn-block" role="alert">D. {{ share.q3ch4 }}</button>
+      </div>
+  </div>
+
+  <div  class="form-action" ><!--*ngFor="let answerOption of answerOptions"-->
+      <button mat-raised-button *ngIf="share.q3correctOption === answer" class="btn btn-light btn-block ">
+                      Haklısın {{ share.q3correctOption }} Doğru Cevap :)
+                  </button>
+  </div>
+  <div class="form-action">
+    <button mat-raised-button *ngIf="share.q3correctOption!==answer && answer!=='' " color="warn" class="btn-danger btn-block">
+      Cevabınız yanlış...
+    </button>
+</div>
+
+</div>
+  <!--queston 4  start-->
+    <div class="soru"  *ngFor="let share of shares | async">
+      <div class="card-body text-center">{{ share.q4 }}</div>
+    <div class="row">
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q4ch1)" class="btn btn-primary btn-block " role="alert">A. {{ share.q4ch1 }}</button>
+        </div>
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q4ch2)" class="btn btn-primary btn-block " role="alert">B. {{ share.q4ch2 }}</button>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q4ch3)" class="btn btn-primary btn-block " role="alert">C. {{ share.q4ch3 }}</button>
+        </div>
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q4ch4)" class="btn btn-primary btn-block " role="alert">D. {{ share.q4ch4 }}</button>
+        </div>
+    </div>
+
+    <div  class="form-action" ><!--*ngFor="let answerOption of answerOptions"-->
+        <button mat-raised-button *ngIf="share.q4correctOption === answer" class="btn btn-light btn-block  ">
+          Haklısın. {{ share.q4correctOption }} Doğru Cevap :)
+                        </button>
+    </div>
+    <div class="form-action">
+      <button mat-raised-button *ngIf="share.q4correctOption!=answer && answer!==''  " color="warn" class="btn-danger btn-block">
+        Cevabınız yanlış...
+      </button>
+  </div>
+
+</div>
+  <!--queston 5  start-->
+
+
+
+  <div class="soru"  *ngFor="let share of shares | async">
+    <div class="card-body text-center">{{ share.q5 }}</div>
+    <div class="row">
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q5ch1)"  class="btn btn-light btn-block  "  role="alert">A. {{ share.q5ch1 }}</button>
+        </div>
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q5ch2)"  class="btn btn-light btn-block  "  role="alert">B. {{ share.q5ch2 }}</button>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q5ch3)"  class="btn btn-light btn-block  "  role="alert">C. {{ share.q5ch3 }}</button>
+        </div>
+        <div class="col-6">
+            <button mat-raised-button (click)="onAnswerInput(share.q5ch4)"  class="btn btn-light btn-block  " role="alert">D. {{ share.q5ch4 }}</button>
+        </div>
+    </div>
+    <div  class="form-action" >
+        <button mat-raised-button *ngIf="share.q5correctOption === answer"   class="btn btn-light btn-block  " >
+          Haklısın {{ share.q5correctOption }} Doğru Cevap :)
+         </button>
+    </div>
+    <div class="form-action">
+      <button mat-raised-button *ngIf="share.q5correctOption!=answer && answer!==''  " color="warn" class="btn-danger btn-block">
+        Cevabınız yanlış...
+      </button>
+  </div>
+
+
+  </div>
+
+
+

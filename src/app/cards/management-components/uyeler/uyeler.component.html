@@ -1,0 +1,45 @@
+
+
+<div class="container">
+  <br>
+  <div class="example-button-container">
+    <button mat-fab color="accent" (click)="uyeEkle()">
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+  <br>
+  <table class="table table-hover">
+    <thead>
+
+      <th>Adı</th>
+      <th>Tel</th>
+      <th>e-mail</th>
+
+    </thead>
+    <tbody>
+      <tr *ngFor="let uye of uyeler">
+
+        <td >{{uye.UyeAdi}} </td>
+        <td >{{uye.UyeTel}} </td>
+        <td >{{uye.UyeEmail}} </td>
+
+        <td >
+
+          <button mat-icon-button color="warn" (click)="uyeDuzenle(uye)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" (click)="uyeSil(uye)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </td>
+
+
+      </tr>
+    </tbody>
+
+  </table>
+
+
+
+  </div>
+

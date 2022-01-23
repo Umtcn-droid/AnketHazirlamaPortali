@@ -1,0 +1,55 @@
+<section class="vh-100" style="background-color: #1b0b24;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img
+                src="https://i0.wp.com/mysoftcrm.com/wp-content/uploads/2020/04/Anket-Y%C3%B6netimi-2-1024x1024.jpg"
+                alt="login form"
+                class="img-fluid" style="border-radius: 1rem 0 0 1rem;"
+              />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+
+
+              <form (ngSubmit)="login()">
+                <div class="d-flex align-items-center mb-3 pb-1">
+                  <i class="fas fa-poll fa-2x me-3" style="color: #ff6219;"></i>
+                  <span class="h1 fw-bold mb-0">Anket Hazırlama Portalı</span>
+                </div>
+                <mat-form-field >
+                  <mat-label>E-mail</mat-label>
+                  <input matInput  type="email" name="email" class="form-control" [(ngModel)]="email" placeholder="Enter email Id" required />
+                </mat-form-field>
+                <br>
+                <mat-form-field >
+                  <mat-label>Parola</mat-label>
+                  <input matInput type="password" name="password" class="form-control" [(ngModel)]="password" placeholder="Enter Password" required />
+                </mat-form-field>
+                <br>
+
+
+            <div class="form-group p-2">
+                <button mat-raised-button  color="primary" type="submit" >Login</button>
+
+            </div>
+            </form>
+            <div class="form-group">
+                <p *ngIf="errorMessage.length > 0" class="text-danger">
+                    {{errorMessage}}</p>
+
+                <p *ngIf="error.message.length > 0" class="text-danger">
+                    {{error.message}} </p>
+
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

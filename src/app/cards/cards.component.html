@@ -1,0 +1,25 @@
+<mat-tab-group animationDuration="1000ms" >
+  <main>
+   <div class="container">
+    <mat-tab  class="nav-home" label="Home">
+      <app-home></app-home>
+     </mat-tab>
+  <mat-tab  class="nav-uye" label="User Listesi">
+    <app-uyeler></app-uyeler>
+   </mat-tab>
+   <mat-tab  class="nav-admin "  label="Admin Ayarları">
+   <app-ayarlar></app-ayarlar>
+   </mat-tab>
+   <mat-tab  class="nav-ankets "  label="Anketler listesi">
+    <app-survey></app-survey>
+    </mat-tab>
+   <mat-tab  class="nav-istatik "  label="Anket Sonuçlar">
+   <app-sonuc></app-sonuc>
+   </mat-tab>
+    <mat-tab  class="nav-out "  label="Oturumu Kapat">
+    <app-out-page></app-out-page>
+    </mat-tab>
+   </div>
+   </main>
+  </mat-tab-group>
+<app-foot></app-foot>

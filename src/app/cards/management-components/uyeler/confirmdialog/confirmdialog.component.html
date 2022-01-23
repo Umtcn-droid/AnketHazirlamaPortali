@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <span>Işlem Onayla</span>
+</mat-toolbar>
+<div class="container">
+  <p>{{Baslik}}</p>
+  <button mat-raised-button color="primary" (click)="this.dialogRef.close(true)" >Onayla</button>
+  <button mat-raised-button color="warn"  (click)="this.dialogRef.close(false)">İptal</button>
+</div>

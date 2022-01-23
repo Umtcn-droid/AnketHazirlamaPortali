@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <span>{{Baslik}}</span>
+</mat-toolbar>
+
+
+<form [formGroup]="form">
+  <mat-form-field>
+    <mat-label>ID</mat-label>
+    <input matInput pleaceholder="ID" formControlName="ID">
+  </mat-form-field >
+<mat-form-field>
+  <mat-label>Soru</mat-label>
+  <input matInput pleaceholder="Soru" formControlName="Question">
+</mat-form-field >
+<button mat-raised-button color="primary" (click)="this.SdialogRef.close(form.value)">Kaydet</button>
+<button mat-raised-button color="warn"  (click)="this.SdialogRef.close()">İptal</button>
+</form>
+
